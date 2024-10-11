@@ -1,0 +1,50 @@
+<!-- ### 7. **Switch Statement**
+
+- Task: Create a program that asks the user to enter a day of the week and prints the day in Gujarati
+ (using a `switch` statement).
+- Rubric: 4 points for switch implementation, 1 point for correct Gujarati day names. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function printGujaratiDay() {
+        const day = prompt("Enter a day of the week (Monday, Tuesday, ...):").toLowerCase();
+
+  switch (day) {
+    case "monday":
+      console.log("સોમવાર");
+      break;
+    case "tuesday":
+      console.log("મંગળવાર");
+      break;
+    case "wednesday":
+      console.log("બુધવાર");
+      break;
+    case "thursday":
+      console.log("ગુરુવાર");
+      break;
+    case "friday":
+      console.log("શુક્રવાર");
+      break;
+    case "saturday":
+      console.log("શનિવાર");
+      break;
+    case "sunday":
+      console.log("રવિવાર");
+      break;
+    default:
+      console.log("Invalid day of the week.");
+  }
+}
+
+printGujaratiDay();
+
+    </script>
+</body>
+</html>

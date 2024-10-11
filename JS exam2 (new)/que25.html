@@ -1,0 +1,43 @@
+ <!-- ### 25. **Prompt Box**
+
+ - Task: Use `prompt()` to ask the user for their favorite number and print whether it's 
+a prime number or not.
+ - Rubric: 4 points for prime number logic, 1 point for input handling. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPrime(num) {
+          if (num <= 1) {
+           return false;
+          }
+
+        for (let i = 2; i * i <= num; i++) {
+          if (num % i === 0) {
+          return false;
+        }
+       }
+  return true;
+}
+
+const favoriteNumber = parseInt(prompt("Enter your favorite number:"));
+
+if (isPrime(favoriteNumber)) {
+  console.log(`${favoriteNumber} is a prime number.`);
+} else {
+  console.log(`${favoriteNumber} is not a prime number.`);
+}
+    </script>
+</body>
+</html>
+
+
+  
+  
+  

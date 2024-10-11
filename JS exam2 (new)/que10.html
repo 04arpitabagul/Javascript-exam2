@@ -1,0 +1,33 @@
+ <!-- ### 10. **Nested Loops**
+ - Task: Write a program to display a simple 3x3 grid using nested loops.
+ - Rubric: 4 points for correct nested loops, 1 point for formatting. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      function displayGrid() {
+            let grid = "";
+            for (let i = 0; i < 3; i++) {
+               let row = "";
+                 for (let j = 0; j < 3; j++) {
+                   row += "* ";
+               }
+             grid += row + "<br>";
+           }
+          document.write(grid);
+      }
+  
+  displayGrid();
+    </script>
+</body>
+</html>
+
+
+  
+    
